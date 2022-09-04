@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.DspFlxCls
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.QtyIptCls
+{
+    width: 50px;
+    text-align: center;
+}

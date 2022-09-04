@@ -1,0 +1,29 @@
+<div class="DspFlxCls">
+    <div style="width:40%">
+        <h3>{{TtlVar}}</h3>
+        <p>{{DtlVar}}</p>
+    </div>
+    <div>
+        <a (click)="IknTglFnc()">
+            <fa-icon [icon]="NamFasIknVar" style="color:orange; font-size: 24px"></fa-icon>
+        </a>
+    </div>
+    <div>
+        <button (click)="ChjQtyFnc(-1)">-</button>
+        <input type="number" placeholder="Qty" max="10" class="QtyIptCls" [(ngModel)]="QtyVar">
+        <button (click)="ChjQtyFnc(1)">+</button>
+    </div>
+    <p>
+        Unit Cost : &pound;{{MrpVar}}
+    </p>
+    <p>
+        Total Cost : &pound;{{MrpVar * QtyVar}}
+        <i class="fas fa-shopping-cart" style="color:green; font-size: 24px"></i> 
+    </p>
+</div>
+<hr>
+<!-- <a (click)="LykVar = !LykVar">
+    <i [ngClass]="LykVar ? 'fa-solid fa-heart':'fa-regular fa-heart'"
+        style="color:orange; font-size: 24px"></i>
+        {{LykVar}}
+</a> -->

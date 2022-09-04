@@ -1,0 +1,11 @@
+<cart-item-kom *ngFor="let CrtItmVar of CartAryVar; let IdxVar=index" 
+  [title]="CrtItmVar.TtlVak" 
+  [detail]="CrtItmVar.DtlVak"
+  [cost]="CrtItmVar.MrpVak" 
+  (IncQtySubFnc)="IncQtySupFnc($event, IdxVar)"></cart-item-kom>
+
+<div class="DspFlxCls">
+  <h1>Qty : {{TtlQtyVar}}</h1>
+  <h1>Total Unit : {{TtlUntMrpVar}}</h1>
+  <h1>Total MRP : {{TtlMrpVar}}</h1>
+</div> -->

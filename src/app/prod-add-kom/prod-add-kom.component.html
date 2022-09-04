@@ -1,0 +1,24 @@
+<div class="modal-header">
+    Add Product
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group">
+        <input type="text" placeholder="Title" class="form-control"
+            [(ngModel)]="AddPrdVar.TtlVak" name="TtlVav">
+        </div>
+        <br>
+        <input type="text" placeholder="Detail" class="form-control"
+            [(ngModel)]="AddPrdVar.DtlVak" name="DtlVav">
+        <br>
+        <input type="number" placeholder="Cost" class="form-control"
+            [(ngModel)]="AddPrdVar.AmtVak" name="AmtVav">
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" 
+        class="btn btn-success" 
+        (click)="AddPrdFnc()">
+        Add Prod
+    </button>
+</div>
